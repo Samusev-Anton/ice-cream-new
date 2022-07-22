@@ -1,37 +1,62 @@
-<article class="example" id="uk">
-  <h1>HTML-partials</h1>
-
-  <!--
-    ❗️❗️❗️ The path to images from the HTML partial
-    is the same as from the index.html file
-  -->
-  <img src="images/logo.png" alt="" width="320" />
-
-  <p>
-    The
-    <a
-      href="https://github.com/posthtml/posthtml-include"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      posthtml-include
-    </a>
-    plugin allows you to add code from other HTML files (fragments) to HTML page
-    files. Fragments are stored in the <code>src/partials</code> folder. The
-    addition occurs when compiling page files, such as <code>index.html</code>.
-  </p>
-
-  <p>
-    This <code>example.html</code> file is an example of such a snippet, with
-    the markup of a certain part of the main page. This is very convenient for
-    team development on student projects, when several people write in one HTML
-    file at once.
-  </p>
-
-  <p>
-    The syntax for adding a fragment to the main file is:
-    <code> &lt;include src="./partials/filename.html"&gt;&lt;/include&gt;</code>
-  </p>
-
-  <div class="background"></div>
-</article>
+<section class="hero">
+  <div class="conteiner header">
+    <h1 class="header__title">Эффективные решения для вашего бизнеса</h1>
+    <button class="button hero-button" data-modal-open>Заказать услугу</button>
+    <!-- модпльное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="form-wrapper">
+        <button class="modal-close" data-modal-close></button>
+        <form class="modal">
+          <div class="form-area">
+            <p class="form-area__title">
+              Оставьте свои данные, мы вам перезвоним
+            </p>
+            <label class="form-area__field">
+              <span class="form-area__label">Имя</span>
+              <input
+                type="text"
+                class="form-area__input"
+                name="name"
+                placeholder="Степан Бендера"
+              />
+            </label>
+            <label class="form-area__field">
+              <span class="form-area__label">Телефон</span>
+              <input
+                type="tel"
+                class="form-area__input"
+                name="tel"
+                placeholder="+38(000)-000-00-00"
+              />
+            </label>
+            <label class="form-area__field">
+              <span class="form-area__label">Почта</span>
+              <input
+                type="email"
+                class="form-area__input"
+                name="email"
+                placeholder="mail@mail.com"
+              />
+            </label>
+            <label class="form-comment" for="comment">Комментарий</label>
+            <textarea
+              class="form-comment__textarea"
+              name="comment"
+              id="comment"
+              placeholder="Оставьте комментарий"
+            ></textarea>
+            <label class="checkbox">
+              <input class="checkbox__input" type="checkbox" name="topic" />
+              <span class="checbox-wrapper">
+                <span>Соглашаюсь с рассылкой и принимаю</span>
+                <a class="checkbox__link" href=""> Условия договора</a>
+              </span>
+            </label>
+            <button type="submit" class="send-button button">Отправить</button>
+          </div>
+          <!-- оформление модалки -->
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
