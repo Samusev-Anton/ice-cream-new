@@ -1,0 +1,27 @@
+.adventages {
+  background-color: var(--main-color);
+}
+// .adventages__list {
+// }
+// .adventages__item {
+// }
+.adventages__icon {
+  fill: var(--main-dark);
+  width: 50px;
+  height: 50px;
+}
+
+.adventages__title {
+  font-family: 'Titan One';
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.adventages__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+}
