@@ -1,0 +1,49 @@
+.location-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  overflow-y: scroll;
+}
+
+.location-backdrop.loc-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.franchise-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  overflow-y: scroll;
+}
+
+.franchise-backdrop.franchise-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.location-modal {
+  background-color: #fff5f6;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.franchise-modal {
+  background-color: #fff5f6;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
