@@ -1,14 +1,17 @@
 .adventages {
   background-color: var(--main-color);
 }
-// .adventages__list {
-// }
+.adventages__list {
+  padding-bottom: 84px;
+  padding-left: 20px;
+}
 // .adventages__item {
 // }
 .adventages__icon {
   fill: var(--main-dark);
   width: 50px;
   height: 50px;
+  margin-bottom: 16px;
 }
 
 .adventages__title {
@@ -19,6 +22,7 @@
   line-height: 41px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
 .adventages__text {
   font-weight: 700;
