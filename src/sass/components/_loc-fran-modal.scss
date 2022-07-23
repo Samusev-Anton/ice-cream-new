@@ -47,3 +47,47 @@
   height: 100%;
   padding: 15px;
 }
+
+.btn {
+  min-width: 160px;
+  height: 44px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 22px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 10px 17px;
+
+  color: var(--accent-color);
+  background-color: var(--standart-white);
+
+  &:hover,
+  &:focus {
+    color: var(--standart-white);
+    background-color: var(--accent-color);
+  }
+
+  // add transition!!!
+}
+
+.btn-invert {
+  @extend .btn;
+  color: var(--standart-white);
+  background-color: var(--accent-color);
+}
+.location-list {
+  background-color: var(--bg-main-color);
+  margin-top: 30px;
+}
+.location-item:not(:last-child) {
+  margin-bottom: 10px;
+}
