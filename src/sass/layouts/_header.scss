@@ -2,7 +2,6 @@
   background-color: var(--main-color);
   position: fixed;
   max-width: 320px;
-  width: 100%;
   z-index: 10;
   /* background-color: transparent; */
 }
@@ -96,7 +95,7 @@ button {
 }
 .header-nav__link {
   text-decoration: none;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;

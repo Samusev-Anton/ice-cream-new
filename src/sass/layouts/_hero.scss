@@ -1,6 +1,7 @@
 .hero {
   background-color: var(--main-color);
-  padding-top: 9px;
+  padding-top: 83px;
+  // padding-top: 9px;
   overflow-x: hidden;
   position: relative;
 }
@@ -15,8 +16,8 @@
 
 .hero__caption {
   position: absolute;
-   top: 111px;
-  // top: 136px;
+  top: 194px;
+  //  top: 111px;
   left: 20px;
   z-index: 2;
 }
@@ -25,31 +26,31 @@
   font-family: var(--title-font);
   max-width: 218px;
   margin-bottom: 20px;
-font-weight: 400;
-font-size: 26px;
-line-height: 1.15;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: var(--standart-white);
-    animation-duration: 3s;
-    animation-name: slidein;
-    @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--standart-white);
+  animation-duration: 1000ms;
+  animation-name: slidein;
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
 
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
-  }
+    75% {
+      font-size: 300%;
+      margin-left: 25%;
+      width: 150%;
+    }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
   }
-}
 }
 
 .hero__subtitel {
@@ -83,7 +84,8 @@ color: var(--standart-white);
   border-width: 0;
   transition: background-color 250ms linear;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: #c80a39;
     cursor: pointer;
   }
@@ -104,13 +106,15 @@ color: var(--standart-white);
   border-width: 0;
   transition: background-color 250ms linear;
 
-  &:hover, &:focus {
-    background-color: #ECEBEB;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
     cursor: pointer;
   }
 }
 
-.hero__box--img, .hero__box--text {
+.hero__box--img,
+.hero__box--text {
   display: none;
 }
 
@@ -129,7 +133,7 @@ color: var(--standart-white);
     width: 344px;
     height: 344px;
     border-radius: 50%;
-    content: "";
+    content: '';
     background-color: var(--main-dark);
   }
 }
