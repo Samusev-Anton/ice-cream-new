@@ -1,0 +1,114 @@
+.products {
+  padding-top: 60px;
+  text-align: center;
+  &__container {
+    width: 100%;
+
+  }
+}
+.products__lable {
+    font-family: var(--title-font);
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--main-dark);
+}
+.products__title {
+    font-family: var(--title-font);
+    margin-top: 15px;
+    margin-bottom: 148px;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color:var(--accent-color);
+  
+}
+.products__list{
+   padding-left: 0;
+}
+.products-info{
+    position: relative;
+   border-radius: 24px;
+
+}
+.ice-cream{
+    background-color: var(--main-color);
+    margin-bottom: 140px;
+}
+.ice-coffee{
+    background-color: var(--bg-sec-color);
+    margin-bottom: 140px;
+}
+.milkshakes{
+    background-color: var(--bg-third-color);
+}
+
+.products-info__title{
+    padding-top: 160px;
+    padding-bottom: 32px;
+    font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--standart-white);
+font-family: var(--title-font);
+position: relative;
+}
+
+.products-info__title::after{
+    content: '...';
+    position: absolute;
+    color: var(--standart-white);
+     display: flex;
+     width: 26px;
+     height: 6px;
+     text-align: center;
+     left: 127px;
+     top: 268px;
+   
+}
+.products-info__text{
+    color: var(--standart-white);
+font-family: var(--main-font);
+font-size: 14px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+padding-top: 32px;
+
+
+}
+
+.products-btn{
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 409px;
+    left: 120px;
+    cursor: pointer;
+
+
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+.ice-cream::before{
+    content: url('../images/products-mob-1.png');
+    position: absolute;
+    left: 0px;
+    top: -140px;
+    
+}
+.ice-coffee::before{
+    content: url('../images/products-mob-2.png');
+    position: absolute;
+    left: 0px;
+    top: -140px;  
+}
+.milkshakes::before{
+    content: url('../images/products-mob-3.png');
+    position: absolute;
+    left: 0px;
+    top: -140px;
+}
