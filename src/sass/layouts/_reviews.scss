@@ -11,6 +11,7 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 32px;
+  margin-top: 60px;
 }
 
 .reviews__comment {
@@ -20,6 +21,7 @@
   margin-bottom: 16px;
   margin-left: 20px;
   margin-right: 20px;
+  position: relative;
 }
 
 .reviews__comment-item {
@@ -32,6 +34,24 @@
   text-align: center;
 
   color: #000000;
+}
+
+.reviews__border {
+  width: 70%;
+  height: 70%;
+  top: 74px;
+  left: 40px;
+  // transform: translate(-50%, -50%);
+  background: repeating-linear-gradient(
+    #e1e1e1 1px,
+    transparent 2px,
+    transparent 31px
+  );
+
+  position: absolute;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 20px;
 }
 
 .reviews__name {
