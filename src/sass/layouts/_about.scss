@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   background-color: var(--bg-main-color);
   padding-top: 60px;
 }
@@ -29,6 +30,7 @@
   max-width: 220px;
   @include font(500, 12px, 1.6);
   margin-right: auto;
+  z-index: 2;
 }
 .about__text--one {
   color: var(--main-text-color);
@@ -48,4 +50,10 @@
   margin: 0;
   padding: 0;
   letter-spacing: 0.04;
+}
+.about__bg {
+  position: absolute;
+  left: 20px;
+  top: 75%;
+  transform: translateY(-75%);
 }
