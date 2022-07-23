@@ -1,0 +1,13 @@
+.about {
+  background-color: var(--bg-main-color);
+  padding-top: 60px;
+}
+.about__above {
+  //   @include font(400, 18px, 1.6);
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: var(--title-font);
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-dark);
+}
