@@ -1,9 +1,8 @@
 .hero {
-  background-color: #ffb8ca;
-//   padding-top: 9px;
+  background-color: var(--main-color);
+  padding-top: 9px;
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 60px;
 }
 
 .hero__container {
@@ -16,13 +15,14 @@
 
 .hero__caption {
   position: absolute;
-  top: 136px;
+   top: 111px;
+  // top: 136px;
   left: 20px;
   z-index: 2;
 }
 
 .hero__titel {
-  font-family: 'Titan One';
+  font-family: var(--title-font);
   max-width: 218px;
   margin-bottom: 20px;
 font-weight: 400;
@@ -30,7 +30,7 @@ font-size: 26px;
 line-height: 1.15;
 letter-spacing: 0.04em;
 text-transform: uppercase;
-color: #FFFFFF;
+color: var(--standart-white);
     animation-duration: 3s;
     animation-name: slidein;
     @keyframes slidein {
@@ -57,7 +57,7 @@ color: #FFFFFF;
   font-size: 48px;
   line-height: 0.96;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--accent-color);
 }
 
 .hero__list--btn {
@@ -70,14 +70,15 @@ color: #FFFFFF;
 
 .hero__btn--dark {
   padding: 9px 13px;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
-  background-color: #d41443;
+  color: var(--standart-white);
+  background-color: var(--accent-color);
   border-radius: 20px;
   border-width: 0;
   transition: background-color 250ms linear;
@@ -90,14 +91,15 @@ color: #FFFFFF;
 
 .hero__btn--light {
   padding: 9px 13px;
+  font-family: var(--main-font);
   font-weight: 400;
   font-size: 8px;
   line-height: 10px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #D41443;
-  background: #FFFFFF;
+  color: var(--accent-color);
+  background: var(--standart-white);
   border-radius: 20px;
   border-width: 0;
   transition: background-color 250ms linear;
@@ -119,20 +121,21 @@ color: #FFFFFF;
 
   &::before {
     position: absolute;
-    top: 25px;
+    top: -9px;
+    // left: -28%;
+    // top: 25px;
     left: -37%;
     display: block;
     width: 344px;
     height: 344px;
     border-radius: 50%;
     content: "";
-    background-color: #FFA5BA;
+    background-color: var(--main-dark);
   }
 }
 
 .hero__icecream--img {
   position: relative;
-  top: 34px;
   left: -19px;
 }
 
