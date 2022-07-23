@@ -2,7 +2,7 @@
 .footer {
     background: var(--bg-main-color);
   
-    padding-bottom: 60px;
+    padding-bottom: 25px;
   
     // @media screen and (min-width: 768px) {
     //   padding-bottom: 18px;
@@ -201,7 +201,6 @@
   .footer-copyright {
     display: flex;
     justify-content: center;
-    border-top: 1px solid #e1e1e1;
   }
   .footer-copyright_text {
     font-family: DM Sans;
