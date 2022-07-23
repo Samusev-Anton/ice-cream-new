@@ -1,8 +1,9 @@
 .hero {
   background-color: #ffb8ca;
-  padding-top: 9px;
+//   padding-top: 9px;
   overflow-x: hidden;
-//   position: relative;
+  position: relative;
+  padding-bottom: 60px;
 }
 
 .hero__container {
@@ -15,20 +16,40 @@
 
 .hero__caption {
   position: absolute;
-  top: 110px;
+  top: 136px;
   left: 20px;
   z-index: 2;
 }
 
 .hero__titel {
-  max-width: 230px;
-  margin-bottom: 19px;
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 1.16;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
+  font-family: 'Titan One';
+  max-width: 218px;
+  margin-bottom: 20px;
+font-weight: 400;
+font-size: 26px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+    animation-duration: 3s;
+    animation-name: slidein;
+    @keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  75% {
+    font-size: 300%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 }
 
 .hero__subtitel {
@@ -94,12 +115,12 @@
 .hero__box--second {
   position: relative;
   z-index: 1;
-  left: 37%;
+  left: 42%;
 
   &::before {
     position: absolute;
-    top: -9px;
-    left: -28%;
+    top: 25px;
+    left: -37%;
     display: block;
     width: 344px;
     height: 344px;
@@ -111,6 +132,8 @@
 
 .hero__icecream--img {
   position: relative;
+  top: 34px;
+  left: -19px;
 }
 
 .hero__box--third {
