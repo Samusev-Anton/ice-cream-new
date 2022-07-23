@@ -1,0 +1,110 @@
+.header {
+  background-color: var(--main-color);
+  width: 100%;
+  z-index: 10;
+  /* background-color: transparent; */
+}
+.header-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.menu-open-btn {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-family: inherit;
+}
+.menu-open-button {
+  margin-left: auto;
+  width: 26px;
+  height: 26px;
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  display: flex;
+  top: 20px;
+  right: 32px;
+}
+.menu-open-icon {
+  stroke: var(--accent-color);
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  stroke-width: 2.285;
+}
+
+.menu-open-icon {
+  stroke: var(--accent-color);
+  stroke-linejoin: miter;
+  stroke-linecap: butt;
+  stroke-miterlimit: 4;
+  stroke-width: 2.285;
+}
+.header-button-mobile {
+  color: var(--accent-color);
+  display: block;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  background-color: var(--standart-white);
+  border-radius: 22px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+button {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-family: inherit;
+}
+.site-nav-wrap {
+  background-color: var(--menu-color);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-button__icon {
+  fill: currentColor;
+  display: block;
+  margin-left: 10px;
+  left: 175.11px;
+  top: 79px;
+}
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.header-nav {
+  list-style: none;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.header-nav__item:not(last-child) {
+  margin-bottom: 22px;
+}
