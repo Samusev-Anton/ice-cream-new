@@ -1,14 +1,18 @@
+.location {
+  background-color: var(--bg-main-color);
+  padding-bottom: 40px;
+}
+
 .location-backdrop {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-
-  overflow-y: scroll;
 }
 
 .location-backdrop.loc-hidden {
@@ -20,13 +24,12 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 5;
 
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-
-  overflow-y: scroll;
 }
 
 .franchise-backdrop.franchise-hidden {
@@ -39,6 +42,7 @@
   width: 100%;
   height: 100%;
   padding: 15px;
+  padding: 40px 20px;
 }
 
 .franchise-modal {
@@ -46,6 +50,60 @@
   width: 100%;
   height: 100%;
   padding: 15px;
+  padding: 40px 20px;
+}
+
+.franchise-form__container {
+  margin-bottom: 30px;
+}
+
+.franchise__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 10px;
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+  color: var(--accent-color);
+}
+
+.franchise__text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-align: center;
+
+  color: var(--main-dark);
+
+  margin-bottom: 20px;
+}
+
+.franchise-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--main-dark);
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 15px;
+  outline: rgba(0, 0, 0, 0);
+}
+
+.franchise-input__field:not(:last-child) {
+  margin-bottom: 15px;
+}
+.franchise-input__label {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: var(--second-text-color);
 }
 
 .btn {
@@ -84,10 +142,15 @@
   color: var(--standart-white);
   background-color: var(--accent-color);
 }
-.location-list {
-  background-color: var(--bg-main-color);
-  margin-top: 30px;
-}
+
 .location-item:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.loc-close-btn {
+  @extend %btn;
+}
+
+.franchise-submit-btn {
+  @extend .btn-invert;
 }
