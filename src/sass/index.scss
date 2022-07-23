@@ -1,3 +1,7 @@
+@import './utils/mixin';
+@import './utils/vars';
+@import './utils/placeholders';
+
 @import './base/common';
 @import './base/container';
 @import './base/reset';
@@ -15,7 +19,3 @@
 @import './layouts/hero';
 @import './layouts/products';
 @import './layouts/reviews';
-
-@import './utils/mixin';
-@import './utils/vars';
-@import './utils/placeholders';
