@@ -1,10 +1,91 @@
-<div class="modal">
-  <button class="modal-close" type="button">
-    <!-- <svg class="close-icon">
-      <use href=""></use>
-    </svg> -->
-  </button>
-  <form class="form">
-    <p>Оrder processing</p>
-  </form>
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__close" type="button">
+      X
+      <!-- <svg class="close-icon" data-modal-close width="18" height="18">
+          <use href=""></use>
+        </svg> -->
+    </button>
+    <form class="form">
+      <p class="form__title modal__title">Оrder</p>
+      <p class="form__title">choose a dessert</p>
+      <div class="form__dessert modal__type">
+        <label for="ice" class="form-label label"></label>
+        <select class="select" name="ice" id="ice">
+          <option class="option" value="icm">Ice cream</option>
+          <option class="option" value="icf">Ice coffee</option>
+          <option class="option" value="ms">Milkshakes</option>
+        </select>
+        <input
+          class="input"
+          type="number"
+          name="ice"
+          id="ice"
+          min="0"
+          max="10"
+          step="1"
+          value="1"
+        />
+      </div>
+      <p class="form__title modal__subtitle">choose a taste</p>
+      <div class="form__dessert modal__taste">
+        <label for="taste" class="form-label label"> </label>
+        <select class="select" name="taste" id="taste">
+          <option class="option" value="v">vanilla</option>
+          <option class="option" value="ch">chocolate</option>
+          <option class="option" value="b">berry</option>
+        </select>
+      </div>
+      <p class="form__text modal__block">add to ice cream</p>
+      <div class="form__object modal__object">
+        <label for="berries" class="form-label label">seasonal berries</label>
+        <input class="checkbox" type="checkbox" name="berries" id="berries" />
+        <label for="mint" class="form-label label">fresh mint</label>
+        <input type="checkbox" name="mint" id="mint" />
+        <label for="toping" class="form-label label">toping</label>
+        <input type="checkbox" name="toping" id="toping" />
+      </div>
+      <p class="form__text">add to ice coffee</p>
+      <div class="form__object modal__object">
+        <label for="cream" class="form-label label">whipped cream</label>
+        <input type="checkbox" name="cream" id="cream" />
+        <label for="chocolate" class="form-label label">chocolate chips</label>
+        <input type="checkbox" name="chocolate" id="chocolate" />
+        <label for="toping" class="form-label label">toping</label>
+        <input type="checkbox" name="toping" id="toping" />
+      </div>
+      <p class="form__text">add to milkshakes</p>
+      <div class="form__object modal__object">
+        <label for="cream" class="form-label label">whipped cream</label>
+        <input type="checkbox" name="cream" id="cream" />
+        <label for="marshmallow" class="form-label label">marshmallow</label>
+        <input type="checkbox" name="marshmallow" id="marshmallow" />
+        <label for="cookie" class="form-label label">cookie</label>
+        <input type="checkbox" name="cookie" id="cookie" />
+      </div>
+      <p class="form__title modal__title">Enter your contact details</p>
+      <div>
+        <label for="name" class="form-label label">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="tel" class="form-label label">Tel</label>
+        <input type="text" name="tel" id="tel" />
+        <label for="address" class="form-label label">Address</label>
+        <textarea
+          class="address"
+          type="text"
+          name="address"
+          id="address"
+          placeholder="Your address"
+        />
+      </div>
+      <p class="form__title modal__title">Specify payment method</p>
+      <div>
+        <label for="cash" class="form-label label">Cash</label>
+        <input type="radio" name="paid" id="cash" value="cash" />
+        <label for="card" class="form-label label">Bank card</label>
+        <input type="radio" name="paid" id="card" value="card" />
+      </div>
+      <button type="submit" class="modal-btn btn">Confirm the order</button>
+    </form>
+  </div>
 </div>
