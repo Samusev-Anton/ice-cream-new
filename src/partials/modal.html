@@ -1,7 +1,12 @@
-<div class="backdrop" data-modal>
+<button type="button" data-modal-open>
+  <svg class="modal__close-icon" width="18" height="18">
+    <use href="./images/sprite.svg.svg#close"></use>
+  </svg>Confirm
+</button>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <button class="modal__close modal__btn" type="button">
-      <svg class="modal__close-icon" data-modal-close width="18" height="18">
+    <button class="modal__close modal__btn" type="button" data-modal-close>
+      <svg class="modal__close-icon" width="18" height="18">
         <use href="./images/sprite.svg.svg#close"></use>
       </svg>
     </button>
@@ -57,7 +62,7 @@
         >
         <input type="checkbox" name="cream" id="cream" />
         <label for="chocolate" class="form__label modal__object-label"
-          >chocolate chips</label
+          >chocolate</label
         >
         <input type="checkbox" name="chocolate" id="chocolate" />
         <label for="c-toping" class="form__label modal__object-label"
@@ -86,15 +91,34 @@
         <input class="form__input input" type="text" name="name" id="name" />
         <label for="tel" class="form__text modal__contact-label">tel</label>
         <input class="form__input input" type="text" name="tel" id="tel" />
-        <label for="address" class="form__text modal__contact-label">address</label>
-        <input class="form__input input" type="text" name="address" id="address" />
+        <label for="address" class="form__text modal__contact-label"
+          >address</label
+        >
+        <input
+          class="form__input input"
+          type="text"
+          name="address"
+          id="address"
+        />
       </div>
       <p class="form__pretitle modal__contact">Specify payment method</p>
       <div class="form__payment">
         <label for="cash" class="form__payment-label">Cash</label>
-        <input class="form__input input" type="radio" name="paid" id="cash" value="cash" />
+        <input
+          class="form__input input"
+          type="radio"
+          name="paid"
+          id="cash"
+          value="cash"
+        />
         <label for="card" class="form__payment-label">Credit card</label>
-        <input class="form__input input" type="radio" name="paid" id="card" value="card" />
+        <input
+          class="form__input input"
+          type="radio"
+          name="paid"
+          id="card"
+          value="card"
+        />
       </div>
       <button type="submit" class="modal-confirm btn">Confirm</button>
     </form>
