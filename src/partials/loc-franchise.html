@@ -1,0 +1,75 @@
+<ul class="location-list">
+  <li class="location-item">
+    <button type="button" class="location-btn btn-invert" data-loc-open>
+      Our Locations &gt;
+    </button>
+  </li>
+  <li class="location-item">
+    <button type="button" class="location-btn btn" data-franchise-open>
+      Franchise &gt;
+    </button>
+  </li>
+</ul>
+
+<div class="location-backdrop loc-hidden" data-loc>
+  <div class="location-modal">
+    <button type="button" class="loc-close-btn" data-loc-close>
+      <!-- <svg class="close-btn__svg-cont">
+        <use href="./images/icons.svg#icon-cross" class="close-btn__svg"></use>
+      </svg> -->
+    </button>
+    <ul class="location-list">
+      <li class="location-item">
+        <h2 class="location-item__title"></h2>
+        <!-- <img src="" alt="" class="location-item__img" /> -->
+      </li>
+      <li class="location-item">
+        <h2 class="location-item__title"></h2>
+        <!-- <img src="" alt="" class="location-item__img" /> -->
+      </li>
+      <li class="location-item">
+        <h2 class="location-item__title"></h2>
+        <!-- <img src="" alt="" class="location-item__img" /> -->
+      </li>
+    </ul>
+    <button class="loc-close-btn" type="button" data-loc-back>
+      &lt; Back to main
+    </button>
+  </div>
+</div>
+
+<div class="franchise-backdrop franchise-hidden" data-franchise>
+  <div class="franchise-modal">
+    <button type="button" class="franchise-close-btn" data-franchise-close>
+      <!-- <svg class="close-btn__svg-cont">
+        <use href="./images/icons.svg#icon-cross" class="close-btn__svg"></use>
+      </svg> -->
+    </button>
+    <p class="franchise__title">Join our team! <span class="franchise__title--uppercase">Now!</span></p>
+    <p class="franchise__text">Fill the form to get franchise conditions.</p>
+
+    <form class="franchise-form">
+      <div class="franchise-form__container">
+        <label class="franchise-input__label" for="user-name">Full name</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="user-name" id="user-name" />
+        </div>
+      </div>
+
+      <div class="franchise-form__container">
+        <label class="franchise-input__label" for="franchise-loc">Franchise location</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="franchise-loc" id="franchise-loc" />
+        </div>
+      </div>
+
+      <div class="franchise-form__container">
+        <label class="franchise-input__label" for="franchise-mail">email</label>
+        <div class="franchise-input__field">
+          <input type="text" class="franchise-input" name="franchise-mail" id="franchise-mail" />
+        </div>
+      </div>
+      <button class="franchise-submit-btn" type="submit">Send it to me!</button>
+    </form>
+  </div>
+</div>

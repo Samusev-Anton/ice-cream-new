@@ -1,0 +1,93 @@
+.location-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  overflow-y: scroll;
+}
+
+.location-backdrop.loc-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.franchise-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+
+  overflow-y: scroll;
+}
+
+.franchise-backdrop.franchise-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.location-modal {
+  background-color: #fff5f6;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.franchise-modal {
+  background-color: #fff5f6;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+.btn {
+  min-width: 160px;
+  height: 44px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 22px;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 10px 17px;
+
+  color: var(--accent-color);
+  background-color: var(--standart-white);
+
+  &:hover,
+  &:focus {
+    color: var(--standart-white);
+    background-color: var(--accent-color);
+  }
+
+  // add transition!!!
+}
+
+.btn-invert {
+  @extend .btn;
+  color: var(--standart-white);
+  background-color: var(--accent-color);
+}
+.location-list {
+  background-color: var(--bg-main-color);
+  margin-top: 30px;
+}
+.location-item:not(:last-child) {
+  margin-bottom: 10px;
+}
