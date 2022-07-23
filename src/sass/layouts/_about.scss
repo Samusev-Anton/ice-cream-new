@@ -3,11 +3,49 @@
   padding-top: 60px;
 }
 .about__above {
-  //   @include font(400, 18px, 1.6);
-  font-size: 18px;
-  line-height: 1.6;
+  @include font(null, 18px, 1.6);
   font-family: var(--title-font);
   text-align: center;
   text-transform: uppercase;
   color: var(--main-dark);
+  margin-bottom: 15px;
+}
+.about__title {
+  @include font(null, 34px, 1.15);
+  font-family: var(--title-font);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+.about__img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+}
+.about__text {
+  display: block;
+  max-width: 220px;
+  @include font(500, 12px, 1.6);
+  margin-right: auto;
+}
+.about__text--one {
+  color: var(--main-text-color);
+  margin-bottom: 40px;
+}
+.about__text--two {
+  color: var(--second-text-color);
+  margin-bottom: 10px;
+}
+.about__text--trd {
+  color: var(--second-text-color);
+  margin-bottom: 20px;
+}
+.about__button {
+  @extend %btn;
+  min-width: 176px;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.04;
 }
