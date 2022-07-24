@@ -63,6 +63,10 @@
 
 .hero__list--btn {
   display: flex;
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .hero__item--btn:first-child {
