@@ -51,7 +51,7 @@
     text-transform: uppercase;
     color: var(--standart-white);
 
-    .contacts-grid-list > .contacts-grid-item:nth-of-type(even) & {
+    .contacts-grid > .contacts-grid-item:nth-of-type(even) & {
       background-color: var(--bg-third-color);
     }
   }
@@ -74,18 +74,17 @@
     border-bottom: 1px solid #e1e1e1;
     width: 216px;
   }
-  &-workday {
+  .contacts-uptime-item {
     @include font(500, 12px, 1.86);
+  }
+  &-workday {
     color: var(--main-text-color);
   }
   &-worktime {
-    @include font(500, 12px, 1.86);
+    text-transform: uppercase;
     color: var(--main-dark);
-    & > span {
-      text-transform: uppercase;
-    }
   }
-  
+
   &-connect {
     padding-top: 24px;
     &-link {
