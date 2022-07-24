@@ -7,11 +7,24 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 32px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: left;
+    grid-gap: 5px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    grid-gap: 0px;
+  }
 }
-// .adventages__item {
-//   grid-template-columns: repeat(1, 1fr);
-//   grid-gap: 30px;
-// }
+.adventages__item {
+  @media screen and (min-width: 768px) {
+    max-width: 140px;
+    @media screen and (min-width: 1200px) {
+      max-width: 250px;
+    }
+  }
+}
 .adventages__icon {
   fill: var(--main-dark);
   width: 50px;
@@ -29,6 +42,7 @@
   text-transform: uppercase;
   margin-bottom: 16px;
 }
+
 .adventages__text {
   font-weight: 700;
   font-size: 12px;
