@@ -1,9 +1,8 @@
 .adventages {
   background-color: var(--bg-main-color);
+  padding-bottom: 84px;
 }
 .adventages__list {
-  padding-bottom: 84px;
-  padding-left: 20px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 32px;
