@@ -1394,7 +1394,7 @@ button {
 }
 
 .ice-coffee::before {
-  content: url("../images/products-mob-2.png");
+  content: url("../images/products-mob-2.jpg");
   position: absolute;
   left: 0px;
   top: -140px;
