@@ -4,30 +4,22 @@
   // padding-top: 9px;
   overflow-x: hidden;
   position: relative;
-  padding-bottom: 0;
 }
 
 .hero__container {
   min-width: 320px;
   margin-right: auto;
   margin-left: auto;
-  // padding-right: 20px;
-  // padding-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .hero__caption {
-
-    @include mobile{
-    position: absolute;
-    top: 194px;
-    //  top: 111px;
-    // left: 20px;
-    z-index: 2;
-  }
-  @include tablet{
-    width: 230px;
-    position: static;
-  }
+  position: absolute;
+  top: 194px;
+  //  top: 111px;
+  left: 20px;
+  z-index: 2;
 }
 
 .hero__titel {
@@ -59,12 +51,6 @@
       width: 100%;
     }
   }
-    @include tablet{
-    max-width: 170px;
-    margin-bottom: 20px;
-    font-size: 22px;
-    line-height: 1.136;
-  }
 }
 
 .hero__subtitel {
@@ -73,10 +59,6 @@
   line-height: 0.96;
   text-transform: uppercase;
   color: var(--accent-color);
-     @include tablet{
-    font-size: 34px;
-    line-height: 0.91;
-  }
 }
 
 .hero__list--btn {
@@ -135,42 +117,10 @@
   }
 }
 
-.hero__box--img{
+.hero__box--img,
+.hero__box--text {
   display: none;
-@include tablet {
-     display: flex;
-    align-items: flex-end;
-  }
 }
-
-.hero__text{
-font-weight: 400;
-font-size: 8px;
-line-height: 1.5;
-color: var(--standart-white);
-    max-width: 110px;
-    margin-bottom: 7px;
-}
-
-.hero__btn--circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: var(--standart-white);
-    transition: background-color 250ms linear;
-  &:hover,
-  &:focus{
-    background-color: var(--accent-color);
-    cursor: pointer;
-  } 
-}
-
-// .hero__box--text {
-//   display: none;
-// }
 
 .hero__box--second {
   position: relative;
