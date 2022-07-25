@@ -2,7 +2,9 @@
   background-color: var(--bg-main-color);
   padding-bottom: 40px;
 }
-
+.location-list {
+  margin-top: 30px;
+}
 .location-backdrop {
   position: fixed;
   top: 0;
@@ -156,4 +158,3 @@
 .franchise-submit-btn {
   @extend .btn-invert;
 }
-
