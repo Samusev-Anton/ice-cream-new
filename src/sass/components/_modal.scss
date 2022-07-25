@@ -315,17 +315,20 @@
   //   outline: transparent;
   //   border-color: var(--accent-color);
   // }
-
-  .checkbox:focus + & {
-    outline: var(--accent-color);
+  .checkbox-icon:focus-within > & {
     border-color: var(--accent-color);
   }
+
+  // .checkbox:focus + & {
+  //   outline: var(--accent-color);
+  //   border-color: var(--accent-color);
+  // }
 }
 
 .modal__object {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -358,6 +361,17 @@
   }
 }
 
+.checkbox-icon {
+  // position: absolute;
+  // left: 12px;
+  // top: 50%;
+  // transform: translateY(-50%);
+  // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-group:focus-within > & {
+    fill: var(--accent-color);
+  }
+}
 .radio-icon {
   vertical-align: middle;
   margin-right: 7px;
