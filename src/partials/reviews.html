@@ -1,40 +1,68 @@
 <section class="reviews__section">
   <div class="container reviews">
     <h2 class="visually-hidden">Reviews</h2>
-    <img
-      class="reviews__img"
-      src="./images/customer-1.png"
-      alt="Foto client"
-      width="85"
-      height="85"
-    />
-    <div class="reviews__comment">
-      <svg class="test" width="54" height="40" aria-label="Quotes">
-        <use
-          class="reviews__quotes"
-          href="./images/sprite.svg.svg#icon-reveiw-icon"
-        ></use>
-      </svg>
-      <p class="reviews__comment-item">
-        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
-        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
-        in nibh vel risus.
-      </p>
+    <picture>
+      <source
+        srcset="./images/customer-1.jpg 1x, ./images/customer-1-2x.jpg 2x"
+      />
+      <img
+        class="reviews__img"
+        src="./images/customer-1.jpg"
+        alt="Foto client"
+        width="85"
+        height="85"
+      />
+    </picture>
 
+    <div class="reviews__comment">
+      <div class="reviews__quotes">
+        <!-- <svg class="test" width="54" height="40" aria-label="Quotes">
+          <use
+            class="reviews__quotes"
+            href="./images/sprite.svg.svg#icon-reveiw-icon"
+          ></use>
+        </svg> -->
+        <p class="reviews__comment-item">
+          Nullam viverra consectetuer. Quisque cursus et, porttitor risus.
+          Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem
+          ipsum primis in nibh vel risus.
+        </p>
+      </div>
       <span class="reviews__border"></span>
     </div>
     <div class="reviews__name-container">
-      <ul class="reviews__name-list">
+      <!-- <ul class="reviews__name-list">
         <li class="reviews__dots"></li>
         <li class="reviews__dots"></li>
         <li class="reviews__dots"></li>
-      </ul>
+      </ul> -->
       <p class="reviews__name">Emily, Los Angeles</p>
-      <ul class="reviews__example-list">
-        <li class="reviews__exemple-icon"></li>
-        <li class="reviews__exemple-icon"></li>
-        <li class="reviews__exemple-icon"></li>
-      </ul>
+      <div class="reviews__slider">
+        <svg
+          class="reviews__ellipse"
+          width="12.4"
+          height="11.84"
+          aria-label="Icon Home"
+        >
+          <use href="./images/sprite.svg.svg#icon-home"></use>
+        </svg>
+        <svg
+          class="reviews__ellipse"
+          width="12"
+          height="12"
+          aria-label="Icon Ellipse"
+        >
+          <use href="./images/sprite.svg.svg#icon-ellipse"></use>
+        </svg>
+        <svg
+          class="reviews__ellipse"
+          width="12"
+          height="12"
+          aria-label="Icon Ellipse"
+        >
+          <use href="./images/sprite.svg.svg#icon-ellipse"></use>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
