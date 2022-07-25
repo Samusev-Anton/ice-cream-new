@@ -37,6 +37,18 @@
   margin-bottom: 16px;
 }
 
+.adventages-milk::before {
+  content: url('../images/milk.png');
+}
+
+.adventages-applase::before {
+  content: url('../images/apples.png');
+}
+
+.adventages-heart::before {
+  content: url('../images/heart.png');
+}
+
 .adventages__text {
   font-weight: 700;
   font-size: 12px;
