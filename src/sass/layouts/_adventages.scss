@@ -2,6 +2,7 @@
   background-color: var(--bg-main-color);
   padding-bottom: 84px;
 }
+
 .adventages__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -17,6 +18,7 @@
   }
 }
 .adventages__item {
+  max-width: 240px;
   @media screen and (min-width: 768px) {
     max-width: 140px;
     @media screen and (min-width: 1200px) {
@@ -24,14 +26,8 @@
     }
   }
 }
-.adventages__icon {
-  fill: var(--main-dark);
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-}
 
-.adventages__title {
+.adventages__amount {
   font-family: 'Titan One';
   color: var(--accent-color);
   font-weight: 400;
@@ -40,6 +36,21 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.adventages__heart::before {
+  content: url('../images/heart.png');
+}
+
+.adventages__applase::before {
+  content: url('../images/apples.png');
+}
+
+.adventages__milk::before {
+  content: url('../images/milk.png');
 }
 
 .adventages__text {
