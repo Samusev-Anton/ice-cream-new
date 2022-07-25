@@ -1,4 +1,6 @@
 .gallery {
+    display: flex;
+    justify-content: center;
 padding-bottom: 60px;
     background-image: linear-gradient(180deg, var(--bg-main-color) 20%, var(--standart-white) 20%);
 
@@ -20,9 +22,16 @@ padding-bottom: 60px;
 .gallery__container {
     width: 100%;
     margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 15px;
+    margin-right: 15px;
 
+    @include mobile {
+        width: 320px;
+    }
+
+    @media screen and (min-width:480px) {
+        width: 480px;
+    }
 
     @include tablet {
         width: 768px;
@@ -40,10 +49,8 @@ padding-bottom: 60px;
 
 .gallery__list{
     list-style-type: none;
-
-display: grid;
-justify-content: center;
-    grid-template-columns: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: auto;
     gap: 2px;
     grid-template-areas:
@@ -109,3 +116,7 @@ justify-content: center;
     grid-area: gallery__item10;
 }
 
+.fit {
+    width: 100%;
+    height: 100%;
+}
