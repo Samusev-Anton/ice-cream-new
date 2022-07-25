@@ -22,6 +22,10 @@
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
+
+  // &::after {
+  //   background-image: url(./images/sprite.svg.svg#icon-reveiw-icon);
+  // }
 }
 
 .reviews__comment-item {
@@ -51,22 +55,21 @@
   position: absolute;
   align-items: center;
   overflow: hidden;
-  margin-top: 54px;
+  margin-top: 34px;
 }
 
-.test {
-  position: absolute;
-  top: 10px;
-  left: 64px;
-  z-index: 2;
-}
-
-// .reviews__quotes {
+// .test {
 //   position: absolute;
 //   top: 10px;
 //   left: 64px;
 //   z-index: 2;
 // }
+
+.reviews__quotes {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
 
 .reviews__name {
   font-family: 'DM Sans';
@@ -81,6 +84,9 @@
   color: #000000;
 
   margin-bottom: 16px;
+  // &::before {
+
+  // }
 }
 
 .reviews__name-list {
@@ -122,6 +128,17 @@
   height: 12px;
   border-radius: 50%;
   background-color: #d9d9d9;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+}
+
+.reviews__slider {
+  display: flex;
+  justify-content: center;
+}
+
+.reviews__ellipse {
   &:not(:last-child) {
     margin-right: 18px;
   }
