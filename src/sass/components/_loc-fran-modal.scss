@@ -55,7 +55,7 @@
 
   @media screen and (min-width: 768px) {
     width: 420px;
-    height: 60%;
+    height: 480px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,7 +78,7 @@
 
   @media screen and (min-width: 768px) {
     width: 420px;
-    height: 65%;
+    height: 580px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,8 +90,7 @@
 }
 
 .franchise-form__container {
-  margin-bottom: 30px;
-  padding-right: 20px;
+  margin-bottom: 50px;
 }
 
 .franchise__title {
@@ -131,6 +130,11 @@
   background-color: rgba(0, 0, 0, 0);
   padding-left: 15px;
   outline: rgba(0, 0, 0, 0);
+
+  &:focus,
+  &:hover {
+    border: 1px solid var(--accent-color);
+  }
 }
 
 .franchise-input__field:not(:last-child) {
@@ -168,8 +172,8 @@
 
   &:hover,
   &:focus {
-    color: var(--standart-white);
-    background-color: var(--accent-color);
+    color: var(--accent-color);
+    background-color: #ecebeb;
   }
 
   // add transition!!!
@@ -179,9 +183,22 @@
   @extend .btn;
   color: var(--standart-white);
   background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--standart-white);
+    background-color: var(--main-dark);
+  }
 }
 
 .location-item:not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+
+.location-modal__item:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -216,7 +233,7 @@
   letter-spacing: 0.04em;
   text-decoration: none;
 }
-.location-modal-list {
+.location-modal__list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -227,3 +244,18 @@
   flex-direction: column;
 }
 
+.location-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.location-btn__icon {
+  fill: currentColor;
+  margin-left: 10px;
+  .btn-invert & {
+    fill: var(--standart-white);
+    stroke: var(--standart-white);
+  }
+}
