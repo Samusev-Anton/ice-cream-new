@@ -18,6 +18,7 @@
   }
 }
 .adventages__item {
+  max-width: 240px;
   @media screen and (min-width: 768px) {
     max-width: 140px;
     @media screen and (min-width: 1200px) {
@@ -35,18 +36,21 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 16px;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.adventages-milk::before {
-  content: url('../images/milk.png');
+.adventages__heart::before {
+  content: url('../images/heart.png');
 }
 
-.adventages-applase::before {
+.adventages__applase::before {
   content: url('../images/apples.png');
 }
 
-.adventages-heart::before {
-  content: url('../images/heart.png');
+.adventages__milk::before {
+  content: url('../images/milk.png');
 }
 
 .adventages__text {
