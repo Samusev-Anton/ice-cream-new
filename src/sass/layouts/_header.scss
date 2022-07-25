@@ -1,10 +1,11 @@
 .header {
-  background-color: var(--main-color);
+  background-color: #ffb8ca6b;
   position: fixed;
   min-width: 320px;
   z-index: 10;
 }
 .header-container {
+  padding-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 8px;
@@ -13,6 +14,7 @@
   display: flex;
   align-items: center;
 }
+
 .menu-open-btn {
   margin-left: auto;
   display: flex;
@@ -47,6 +49,15 @@
   stroke-miterlimit: 4;
   stroke-width: 2.285;
 }
+.menu-close {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
 .menu-open-icon {
   stroke: var(--accent-color);
@@ -67,11 +78,18 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 20px;
+  margin-top: 40px;
   background-color: var(--standart-white);
   border-radius: 22px;
   font-weight: 700;
   line-height: 1.31;
+  transition: background-color 0.25s linear;
 }
+.header-button-mobile:hover,
+:focus {
+  background-color: #ecebeb;
+}
+
 button {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
@@ -84,8 +102,7 @@ button {
   z-index: 900;
   /* background-color: var(--primary-background-color); */
   top: 0;
-  left: 0;
-  width: 100vw;
+  right: 0;
   height: 100vh;
   padding-top: 20px;
   /* padding-bottom: 48px; */
@@ -105,7 +122,7 @@ button {
 
   color: #ffffff;
 }
-:hover,
+.header-nav__link:hover,
 :focus {
   color: var(--accent-color);
 }
@@ -135,6 +152,9 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.noscroll {
+  overflow: hidden;
 }
 .header-nav__item:not(:last-child) {
   margin-bottom: 22px;
