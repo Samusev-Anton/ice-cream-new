@@ -25,6 +25,8 @@
   margin-left: auto;
   margin-bottom: 40px;
 }
+
+
 .about__text {
   display: block;
   max-width: 220px;
@@ -44,21 +46,23 @@
   color: var(--second-text-color);
   margin-bottom: 20px;
 }
-.about__button {
+.about__link {
   @extend %btn;
-  min-width: 176px;
+  max-width: 176px;
   margin: 0;
   padding: 0;
   letter-spacing: 0.04;
+  display: flex;
+  justify-content: center;
 }
 .about__bg {
   position: absolute;
-  left: 20px;
-  top: 75%;
+
+  top: 77%;
   transform: translateY(-75%);
 }
 
-.button-arrow__icon {
+.link-arrow__icon {
   margin-left: 10px;
   width: 4px;
   height: 8px;
