@@ -1,8 +1,22 @@
 .products {
   padding-top: 60px;
   text-align: center;
+  @include tablet{
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  @include desktop{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   &__container {
     width: 100%;
+    @include tablet{
+        max-width: 768px;
+    }
+   @include desktop{
+    max-width: 1200px;
+   }
   }
 }
 
@@ -12,6 +26,14 @@
   line-height: 1.16;
   text-transform: uppercase;
   color: var(--main-dark);
+  @include tablet{
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @include desktop{
+    font-size: 30px;
+    line-height: 1.13;
+  }
 }
 .products__title {
   font-family: var(--title-font);
@@ -22,15 +44,48 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--accent-color);
+  @include tablet{
+    margin-top: 18px;
+    margin-bottom: 158px;
+    font-size: 48px;
+  }
+  @include desktop{
+    font-size: 58px;
+    line-height: 1.13;
+    margin-top: 16px;
+    margin-bottom: 281px;
+  }
 }
 .products__list {
   padding-left: 0;
+  @include tablet{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  @include desktop{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
 }
 
 .products__item{
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 32px;
+    @include tablet{
+    width: calc((100% - 30px) / 3);
+      text-align: center;
+      padding-left: 32px;
+    padding-right: 32px;
+    }
+    @include desktop{
+        padding-left: 63px;
+        padding-right: 63px;
+        padding-bottom: 60px;
+        width: calc((100% - 96px) / 3);
+    }
 }
 .products-info {
   position: relative;
@@ -39,10 +94,16 @@
 .ice-cream {
   background-color: var(--main-color);
   margin-bottom: 140px;
+  @include tablet{
+    margin-bottom: 0; 
+  }
 }
 .ice-coffee {
   background-color: var(--bg-sec-color);
   margin-bottom: 140px;
+  @include tablet{
+    margin-bottom: 0;
+  }
 }
 .milkshakes {
   background-color: var(--bg-third-color);
@@ -58,18 +119,31 @@
   color: var(--standart-white);
   font-family: var(--title-font);
   position: relative;
+  @include tablet{
+    padding-top: 118px;
+  }
+  @include desktop{
+    padding-top: 165px;
+font-size: 30px;
+line-height: 1.13;
+  }
 }
 
 .products-info__title::after {
   content: '...';
   position: absolute;
   color: var(--standart-white);
-  display: flex;
   width: 26px;
   height: 6px;
   text-align: center;
-  left: 90px;
+  left: 45%;
   top: 200px;
+  @include tablet{
+    top: 150px;
+  }
+  @include desktop{
+    top: 210px;
+  }
 }
 
 
@@ -81,6 +155,13 @@
   letter-spacing: 0.04em;
   padding-top: 32px;
  padding-bottom: 32px;
+ @include tablet{
+    line-height: 1.7;
+ }
+ @include desktop{
+    padding-bottom: 60px;
+    font-size: 16px;
+ }
 }
 
 .products-link {
@@ -101,18 +182,51 @@
 .ice-cream::before {
   content: url('../images/products-mob-1.png');
   position: absolute;
-  left: 0px;
+  left: 0;
+  right: 0;
   top: -140px;
+@include tablet{
+    content: url('../images/products-tab-1.png');
+    width: 224px;
+    top: -138px;
+}
+@include desktop{
+    content: url('../images/products-desk-1.png');
+    width: 368px;
+    top: -261px;
+}
 }
 .ice-coffee::before {
   content: url('../images/products-mob-2.png');
   position: absolute;
   left: 0px;
+  right: 0;
   top: -140px;
+  @include tablet{
+    content: url('../images/products-tab-2.png');
+    width: 224px;
+    top: -138px;
+}
+@include desktop{
+    content: url('../images/products-desk-2.png');
+    width: 368px;
+    top: -261px;
+}
 }
 .milkshakes::before {
   content: url('../images/products-mob-3.png');
   position: absolute;
   left: 0px;
+  right: 0;
   top: -140px;
+  @include tablet{
+    content: url('../images/products-tab-3.png');
+    width: 224px;
+    top: -138px;
+}
+@include desktop{
+    content: url('../images/products-desk-3.png');
+    width: 368px;
+    top: -261px;
+}
 }
