@@ -2,6 +2,7 @@
   background-color: var(--bg-main-color);
   padding-bottom: 84px;
 }
+
 .adventages__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -24,14 +25,8 @@
     }
   }
 }
-.adventages__icon {
-  fill: var(--main-dark);
-  width: 50px;
-  height: 50px;
-  margin-bottom: 16px;
-}
 
-.adventages__title {
+.adventages__amount {
   font-family: 'Titan One';
   color: var(--accent-color);
   font-weight: 400;
