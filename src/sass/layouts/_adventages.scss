@@ -1,6 +1,5 @@
 .adventages {
   background-color: var(--bg-main-color);
-  padding-bottom: 84px;
 }
 
 .adventages__list {
@@ -43,14 +42,17 @@
 
 .adventages__heart::before {
   content: url('../images/heart.png');
+  margin-bottom: 16px;
 }
 
 .adventages__applase::before {
   content: url('../images/apples.png');
+  margin-bottom: 16px;
 }
 
 .adventages__milk::before {
   content: url('../images/milk.png');
+  margin-bottom: 16px;
 }
 
 .adventages__text {
