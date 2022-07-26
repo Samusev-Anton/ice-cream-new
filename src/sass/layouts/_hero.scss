@@ -3,14 +3,14 @@
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
-  @include tablet {
-    // padding-right: 32px;
-    // padding-left: 32px;
-  }
-  @include desktop {
-    // padding-right: 16px;
-    // padding-left: 16px;
-  }
+  // @include tablet {
+  //   // padding-right: 32px;
+  //   // padding-left: 32px;
+  // }
+  // @include desktop {
+  //   // padding-right: 16px;
+  //   // padding-left: 16px;
+  // }
 }
 
 .hero__container {
@@ -253,10 +253,10 @@
   }
 }
 
-.btn-link {
-  display: flex;
-  align-items: center;
-}
+// .btn-link {
+//   display: flex;
+//   align-items: center;
+// }
 
 .hero__btn--svg {
   fill: var(--accent-color);
