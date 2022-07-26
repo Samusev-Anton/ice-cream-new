@@ -167,13 +167,16 @@
   margin: 0 auto;
   padding: 10px 17px;
 
+  transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--accent-color);
   background-color: var(--standart-white);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-    background-color: #ecebeb;
+    background-color: var(--btn-hover);
   }
 
   // add transition!!!
@@ -182,11 +185,11 @@
 .btn-invert {
   @extend .btn;
   color: var(--standart-white);
-  background-color: var(--accent-color);
+  background-color: #de355e;
   &:hover,
   &:focus {
     color: var(--standart-white);
-    background-color: var(--main-dark);
+    background-color: var(--accent-color);
   }
 }
 
@@ -212,7 +215,7 @@
 
 .location-modal .modal__btn,
 .franchise-modal .modal__btn {
-  top: 15px;
+  top: 25px;
   right: 25px;
 }
 
@@ -232,6 +235,13 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-decoration: none;
+
+  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: #de355e;
+  }
 }
 .location-modal__list {
   display: flex;
