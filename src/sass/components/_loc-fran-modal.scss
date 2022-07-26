@@ -20,8 +20,8 @@
 }
 
 .location-backdrop.loc-hidden {
-  opacity: 0;
-  pointer-events: none;
+  // opacity: 0;
+  @extend .is-hidden;
 }
 
 .franchise-backdrop {
@@ -42,8 +42,8 @@
 }
 
 .franchise-backdrop.franchise-hidden {
-  opacity: 0;
-  pointer-events: none;
+  // opacity: 0;
+  @extend .is-hidden;
 }
 
 .location-modal {
