@@ -1,39 +1,17 @@
   /*  ::-webkit- is for chrome */
-// ::-webkit-scrollbar {
-//     width: 1em;
-//     overflow-x: none;
-// }
-// ::-webkit-scrollbar-track {
-//     background-color: var(--bg-main-color);
-//     margin-block: 0.20em;
-//     border-radius: 0.5em;
-// }
-// ::-webkit-scrollbar-thumb {
-//     background: var(--accent-color);
-//     background: -webkit-linear-gradient(to right, var(--accent-color), var(--main-dark));
-//     background: linear-gradient(to right, var(--accent-color), var(--main-dark));
-//     border-radius: 0.5em;
-// }
-
-
 ::-webkit-scrollbar {
-    width: 100vh;
+    width: 10px;
 }
- 
-/* Track */
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
- 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: -webkit-linear-gradient(to right, var(--accent-color), var(--main-dark));
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: var(--accent-color); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: -webkit-linear-gradient(to right, var(--accent-color), var(--main-dark));
+	background: var(--accent-color); 
 }
