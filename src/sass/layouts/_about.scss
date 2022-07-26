@@ -13,6 +13,12 @@
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
+      background-image: url(/src/images/milk-about1200.png);
+      background-repeat: no-repeat;
+      background-position:center;
+      background-position: 50% 70%;
+      background-size:auto;
+    
   }
 }
 .about__above {
@@ -30,7 +36,7 @@
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 16pxad;
+    margin-bottom: 16px;
   }
   @media screen and(min-width:1200px) {
     font-family: 'Titan One';
@@ -78,6 +84,7 @@
   @media screen and(max-width:767px) {
     width: 320px;
   }
+
 }
 .about__img {
   margin-right: auto;
@@ -86,6 +93,9 @@
   @media screen and(min-width:768px) {
     width: 280px;
   }
+  @media screen and(min-width:768px) {
+    width: 336px;
+  }
   @media screen and(min-width:1200px) {
     width: 501px;
   }
@@ -93,6 +103,7 @@
 .about__text--block {
   @media screen and(max-width :767px) {
     width: 220px;
+
   }
 
   @media screen and(min-width:768px) {
@@ -106,11 +117,19 @@
   }
 }
 .about__block {
+  @media screen and(max-width:767px) {
+    background-image: url(/src/images/milk-about.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position: 50% 70%;
+    background-size:auto;
+  }
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
 }
 
 .about__text {
@@ -194,7 +213,7 @@
 .about__bg-img {
   width: 1200px;
   @media screen and (max-width: 767px) {
-    width: 320px;
+    width: 280px;
   }
 }
 
