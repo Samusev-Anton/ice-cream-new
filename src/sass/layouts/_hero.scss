@@ -19,18 +19,23 @@
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
+    width: auto;
+    max-width: 400px;
   @include tablet {
     display: flex;
     padding-top: 92px;
     padding-right: 32px;
     padding-left: 32px;
-
+    width: auto;
+    max-width: 800px;
   }
   @include desktop {
     display: flex;
     padding-top: 147px;
     padding-right: 16px;
     padding-left: 16px;
+    width: auto;
+    max-width: 1300px;
   }
 }
 
