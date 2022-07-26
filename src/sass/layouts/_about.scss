@@ -5,7 +5,7 @@
 }
 .about__container {
   @media screen and (max-width: 767px) {
-    // width: 320px;
+    width: 320px;
     position: relative;
   }
   @media screen and (min-width: 768px) {
@@ -118,6 +118,7 @@
 }
 .about__block {
   @media screen and(max-width:767px) {
+
     background-image: url(/src/images/milk-about.png);
     background-repeat: no-repeat;
     background-position:center;
