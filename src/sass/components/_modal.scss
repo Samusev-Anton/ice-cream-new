@@ -5,9 +5,13 @@
   letter-spacing: 0.04em;
   color: var(--standart-white);
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 .form__subtitle {
+  font-family: 'Titan One';
   color: var(--standart-white);
   text-shadow: 2px 2px 4px var(--accent-color);
 }
@@ -22,12 +26,16 @@
 }
 
 .form__text {
-  font-size: 22px;
+  font-family: 'Titan One';
+  font-size: 20px;
   line-height: 1.4;
   letter-spacing: 0.04em;
   color: var(--standart-white);
   text-align: center;
   text-shadow: 2px 2px 4px var(--accent-color);
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
 }
 
 .modal__btn {
@@ -68,11 +76,14 @@
 .modal-confirm {
   border-color: var(--main-dark);
   font-size: 16px;
+  text-transform: uppercase;
   color: var(--standart-white);
   background: var(--accent-color);
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -80,6 +91,9 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: transparent;
     color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
   }
 }
 
@@ -157,13 +171,20 @@
   font-size: 10px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .form__payment-label {
-  font-size: 10px;
+  font-family: 'Titan One';
+  font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .modal__object-label {
@@ -177,10 +198,9 @@
   padding-left: 15px;
   text-align: left;
   font-size: 15px;
-}
-
-.form__group-label {
-  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .form-icon {
@@ -188,7 +208,8 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .form-group:focus-within > & {
     fill: var(--accent-color);
@@ -219,6 +240,9 @@
   letter-spacing: 0.04em;
   text-align: center;
   color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .address {
@@ -245,6 +269,9 @@
   letter-spacing: 0.01em;
 
   color: var(--accent-color);
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 .select {
   min-height: 35px;
@@ -311,10 +338,10 @@
 
   color: var(--accent-color);
 
-  // .checkbox:checked + & {
-  //   outline: transparent;
-  //   border-color: var(--accent-color);
-  // }
+  .checkbox:checked + & {
+    outline: transparent;
+    border-color: var(--accent-color);
+  }
   .checkbox-icon:focus-within > & {
     border-color: var(--accent-color);
   }
@@ -342,7 +369,7 @@
 
   fill-opacity: 0;
 
-  transition: background-colo 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill-opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -356,27 +383,16 @@
   }
 
   .checkbox:focus + & {
-    // outline: var(--accent-color);
+    outline: var(--accent-color);
     border-color: var(--accent-color);
   }
 }
 
-.checkbox-icon {
-  // position: absolute;
-  // left: 12px;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  .form-group:focus-within > & {
-    fill: var(--accent-color);
-  }
-}
 .radio-icon {
   vertical-align: middle;
   margin-right: 7px;
 
-  border: 2px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
   border-radius: 50%;
 
   fill-opacity: 0;
@@ -397,9 +413,6 @@
   .radio:focus + & {
     outline: var(--accent-color);
     border-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
   }
 }
-
-// label[tabindex='0']:focus {
-//   outline: 4px dashed orange;
-// }
