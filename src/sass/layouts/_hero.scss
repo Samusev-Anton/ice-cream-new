@@ -4,42 +4,36 @@
   padding-left: 0;
   padding-right: 0;
   @include tablet {
-    padding-right: 32px;
-    padding-left: 32px;
+    // padding-right: 32px;
+    // padding-left: 32px;
   }
   @include desktop {
-    padding-right: 56px;
-    padding-left: 56px;
-  }
-}
-
-.hero .hero__container {
-  padding-top: 83px;
-  overflow-x: hidden;
-  position: relative;
-  width: 100%;
-  // margin-right: auto;
-  // margin-left: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  @include tablet {
-    // max-width: 768px;
-    display: flex;
-    padding-top: 92px;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  @include desktop {
-    padding-top: 147px;
-    // max-width: 1200px;
-    display: flex;
+    // padding-right: 16px;
+    // padding-left: 16px;
   }
 }
 
 .hero__container {
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 83px;
+  overflow-x: hidden;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include tablet {
+    display: flex;
+    padding-top: 92px;
+    padding-right: 32px;
+    padding-left: 32px;
+
+  }
+  @include desktop {
+    display: flex;
+    padding-top: 147px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
 }
+
 .hero__box--titel {
   @include mobile {
     position: absolute;
