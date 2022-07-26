@@ -20,6 +20,8 @@
   }
 }
 
+
+ 
 .products__lable {
   font-family: var(--title-font);
   font-size: 18px;
@@ -168,14 +170,22 @@ line-height: 1.13;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  fill: var(--accent-color);
-  
+  fill: var(--accent-color); 
+}
+.products-link:focus{
+    fill: var(--main-dark);
+        background-color: transparent;
 }
 
 .link-more{
+    width: 40px;
+    height: 40px;
+    background-color: var(--standart-white);
+    border-radius: 50%;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus, &:hover{
         fill: var(--main-dark);
+       
       }
 }
 
