@@ -5,7 +5,7 @@
 }
 .about__container {
   @media screen and (max-width: 767px) {
-    // width: 320px;
+    width: 320px;
     position: relative;
   }
   @media screen and (min-width: 768px) {
@@ -13,12 +13,11 @@
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
-      background-image: url(/src/images/milk-about1200.png);
-      background-repeat: no-repeat;
-      background-position:center;
-      background-position: 50% 70%;
-      background-size:auto;
-    
+    background-image: url(/src/images/milk-about1200.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 50% 70%;
+    background-size: auto;
   }
 }
 .about__above {
@@ -84,7 +83,6 @@
   @media screen and(max-width:767px) {
     width: 320px;
   }
-
 }
 .about__img {
   margin-right: auto;
@@ -103,7 +101,6 @@
 .about__text--block {
   @media screen and(max-width :767px) {
     width: 220px;
-
   }
 
   @media screen and(min-width:768px) {
@@ -120,16 +117,15 @@
   @media screen and(max-width:767px) {
     background-image: url(/src/images/milk-about.png);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     background-position: 50% 70%;
-    background-size:auto;
+    background-size: auto;
   }
   @media screen and(min-width:768px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
 }
 
 .about__text {
