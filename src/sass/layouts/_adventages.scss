@@ -28,7 +28,7 @@
 .adventages__amount {
   font-family: 'Titan One';
   color: var(--accent-color);
-  @include font(400, 36px, 41px);
+  @include font(400, 36px, 1.14);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -53,5 +53,5 @@
 }
 
 .adventages__text {
-  @include font(700, 12px, 20px);
+  @include font(700, 12px, 1.7);
 }
