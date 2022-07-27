@@ -35,7 +35,7 @@
   z-index: 900;
   top: 0;
   right: 0;
-  width: 50vh;
+  width: 100vw;
   height: 100vh;
   padding-top: 20px;
   transition: all 500ms ease;
@@ -43,7 +43,7 @@
   padding-right: 20px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 768px) {
   .site-nav-wrap {
     width: 75vw;
     max-width: 254px;
