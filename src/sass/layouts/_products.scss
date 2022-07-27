@@ -1,21 +1,18 @@
 .products {
     padding-top: 60px;
     text-align: center;
-    @include tablet{
-      padding-left: 32px;
-      padding-right: 32px;
-    }
-    @include desktop{
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+   
     &__container {
       width: 100%;
       @include tablet{
           max-width: 768px;
+          padding-left: 32px;
+      padding-right: 32px;
       }
      @include desktop{
       max-width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
      }
     }
   }
@@ -24,35 +21,36 @@
     font-family: var(--title-font);
     font-size: 18px;
     line-height: 1.16;
+    margin-bottom: 15px;
     text-transform: uppercase;
     color: var(--main-dark);
     @include tablet{
       font-size: 26px;
       line-height: 1.15;
+      margin-bottom: 18px;
     }
     @include desktop{
       font-size: 30px;
       line-height: 1.13;
+      margin-bottom: 16px;
     }
   }
   .products__title {
     font-family: var(--title-font);
-    margin-top: 15px;
     margin-bottom: 148px;
     font-size: 34px;
     line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--accent-color);
-    @include tablet{
-      margin-top: 18px;
+    @include tablet{ 
       margin-bottom: 158px;
       font-size: 48px;
     }
     @include desktop{
       font-size: 58px;
       line-height: 1.13;
-      margin-top: 16px;
+      
       margin-bottom: 281px;
     }
   }
@@ -74,17 +72,20 @@
   .products__item{
       padding-left: 40px;
       padding-right: 40px;
+      padding-top: 160px;
       padding-bottom: 32px;
       @include tablet{
       width: calc((100% - 30px) / 3);
         text-align: center;
         padding-left: 32px;
       padding-right: 32px;
+      padding-top: 118px;
       }
       @include desktop{
           padding-left: 63px;
           padding-right: 63px;
           padding-bottom: 60px;
+          padding-top: 165px;
           width: calc((100% - 96px) / 3);
       }
   }
@@ -111,8 +112,8 @@
   }
   
   .products-info__title {
-    padding-top: 160px;
-    padding-bottom: 32px;
+    
+    margin-bottom: 32px;
     font-size: 20px;
     line-height: 1.15;
     letter-spacing: 0.04em;
@@ -120,11 +121,9 @@
     color: var(--standart-white);
     font-family: var(--title-font);
     position: relative;
-    @include tablet{
-      padding-top: 118px;
-    }
+    
     @include desktop{
-      padding-top: 165px;
+      
   font-size: 30px;
   line-height: 1.13;
     }
@@ -138,13 +137,11 @@
     height: 6px;
     text-align: center;
     left: 45%;
-    top: 200px;
+    top: 40px;
     @include tablet{
-      top: 150px;
+      top: 50px;
     }
-    @include desktop{
-      top: 210px;
-    }
+   
   }
   
   
