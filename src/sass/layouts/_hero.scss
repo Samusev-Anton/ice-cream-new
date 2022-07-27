@@ -330,9 +330,7 @@
 }
 
 .hero__box--third {
-  @include mobile {
-    display: none;
-  }
+  display: none;
   @include tablet {
     display: block;
     position: relative;
