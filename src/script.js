@@ -3,7 +3,7 @@ var swiper = new Swiper('.slide-content', {
     el: '.swiper-pagination',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + '</span>';
+      return '<span class="' + className + '">' + '</span>';
     },
   },
 });
