@@ -115,7 +115,6 @@
 }
 .about__block {
   @media screen and(max-width:767px) {
-
     background-image: url(/src/images/milk-about.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -215,8 +214,9 @@
 }
 
 .link-arrow__icon {
+  // display: inline-block;
   margin-left: 10px;
   width: 4px;
   height: 8px;
-  fill: black;
+  fill: red;
 }

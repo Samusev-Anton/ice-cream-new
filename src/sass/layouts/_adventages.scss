@@ -6,20 +6,20 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 32px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: flex;
     justify-content: left;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: space-between;
     grid-gap: 0px;
   }
 }
 .adventages__item {
   max-width: 240px;
-  @media screen and (min-width: 768px) {
+  @include tablet {
     max-width: 140px;
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       max-width: 250px;
     }
   }
@@ -28,9 +28,7 @@
 .adventages__amount {
   font-family: 'Titan One';
   color: var(--accent-color);
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 41px;
+  @include font(400, 36px, 41px);
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -55,7 +53,5 @@
 }
 
 .adventages__text {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 20px;
+  @include font(700, 12px, 20px);
 }
