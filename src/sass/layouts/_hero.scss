@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+  }
+
 .hero {
   background-color: var(--main-color);
   padding-bottom: 0;
@@ -131,11 +135,8 @@
 
 .hero__list--btn {
   display: flex;
-  & a {
-    text-decoration: none;
-    color: inherit;
+  color: inherit;
   }
-}
 
 .hero__item--btn:first-child {
   margin-right: 8px;
