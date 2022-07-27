@@ -131,13 +131,19 @@
   }
 }
 
-.reviews__slider {
-  display: flex;
-  justify-content: center;
-}
+// .reviews__slider {
+//   display: flex;
+//   justify-content: center;
+// }
 
-.reviews__ellipse {
-  &:not(:last-child) {
-    margin-right: 18px;
-  }
+// .reviews__ellipse {
+//   &:not(:last-child) {
+//     margin-right: 18px;
+//   }
+// }
+
+.swiper-pagination {
+  width: 12px;
+  height: 12px;
+  margin-top: 200px;
 }
